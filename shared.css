@@ -7,6 +7,20 @@ body {
   margin: 0;
 }
 
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* We can change the width and height from 100% to 100vw and 
+100vh but it will not make any huge difference because of fixed position.
+we can use vmin and vmax to set a minimum and maximum value. */
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 .main-header {
   width: 100%;
   position: fixed;
