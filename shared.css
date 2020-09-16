@@ -67,7 +67,8 @@ we can use vmin and vmax to set a minimum and maximum value. */
   margin: 0 1rem;
 }
 
-.main-nav__item a {
+.main-nav__item a,
+.mobile-nav__item a {
   text-decoration: none;
   color: #0e4f1f;
   font-weight: bold;
@@ -80,7 +81,8 @@ we can use vmin and vmax to set a minimum and maximum value. */
   border-bottom: 5px solid white;
 }
 
-.main-nav__item--cta a {
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
   color: white;
   background: #ff1b68;
   padding: 0.5rem 1rem;
