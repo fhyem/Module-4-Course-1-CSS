@@ -36,6 +36,29 @@ we can use vmin and vmax to set a minimum and maximum value. */
   vertical-align: middle;
 }
 
+/* Toggle button */
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
 .main-header__brand {
   color: #0e4f1f;
   text-decoration: none;
@@ -43,6 +66,7 @@ we can use vmin and vmax to set a minimum and maximum value. */
   font-size: 1.3rem;
   height: 1.3rem;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -52,7 +76,7 @@ we can use vmin and vmax to set a minimum and maximum value. */
 .main-nav {
   display: inline-block;
   text-align: right;
-  width: calc(100% - 74px);
+  width: calc(100% - 122px);
   vertical-align: middle;
 }
 
@@ -90,7 +114,9 @@ we can use vmin and vmax to set a minimum and maximum value. */
 }
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
   color: #ff1b68;
   background: white;
   border: none;
@@ -176,3 +202,10 @@ we can use vmin and vmax to set a minimum and maximum value. */
 .mobile-nav__item a {
   font-size: 1.5rem;
 }
+
+.open {
+  display: block !important;
+}
+/* The backdrop show up but the modal doesnt because open class is added but its
+overwritten by modal class. We will overwrite it by adding !important to 
+open class so that it overwrites the modal class and uses open class.*/
