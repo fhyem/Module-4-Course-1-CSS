@@ -4,7 +4,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  margin: 4rem 0;
+  margin: 0;
 }
 
 main {
@@ -68,20 +68,18 @@ we can use vmin and vmax to set a minimum and maximum value. */
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  height: 2.5rem;
+  font-size: 1.5rem;
+  /* height: 1.5rem; */
   display: inline-block;
   vertical-align: middle;
 }
 
 .main-header__brand img {
-  height: 100%;
+  height: 2.5rem;
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 122px);
-  vertical-align: middle;
+  display: none;
 }
 
 .main-nav__items {
@@ -100,7 +98,7 @@ we can use vmin and vmax to set a minimum and maximum value. */
   text-decoration: none;
   color: #0e4f1f;
   font-weight: bold;
-  padding: 3px 0;
+  padding: 0.2rem 0;
 }
 
 .main-nav__item a:hover,
@@ -126,29 +124,18 @@ we can use vmin and vmax to set a minimum and maximum value. */
   border: none;
 }
 
-/* Buttons */
-.button {
-  background: #0e4f1f;
-  color: white;
-  font: inherit;
-  border: 1.5px solid #0e4f1f;
-  padding: 0.5rem;
-  border-radius: 0, 5rem;
-  font-weight: bold;
-  cursor: pointer;
-}
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
 
-.button:hover,
-.button:active {
-  background: white;
-  color: #0e4f1f;
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 44px);
+    vertical-align: middle;
+  }
 }
-
-.button:focus {
-  outline: none;
-}
-
-/* Footer */
 
 .main-footer {
   background: black;
@@ -164,8 +151,8 @@ we can use vmin and vmax to set a minimum and maximum value. */
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+  display: block;
+  margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -178,7 +165,6 @@ we can use vmin and vmax to set a minimum and maximum value. */
   color: #ccc;
 }
 
-/* Mobile Nav */
 .mobile-nav {
   display: none;
   position: fixed;
@@ -207,9 +193,34 @@ we can use vmin and vmax to set a minimum and maximum value. */
   font-size: 1.5rem;
 }
 
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
+
+.button:focus {
+  outline: none;
+}
+
 .open {
   display: block !important;
 }
-/* The backdrop show up but the modal doesnt because open class is added but its
-overwritten by modal class. We will overwrite it by adding !important to 
-open class so that it overwrites the modal class and uses open class.*/
+
+@media (min-width: 40rem) {
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+}
