@@ -9,7 +9,7 @@ body {
 
 main {
   min-height: calc(100vh - 3.5rem - 8rem);
-  margin-top: 4rem auto;
+  margin-top: 3.8rem;
 }
 
 .backdrop {
@@ -213,6 +213,14 @@ we can use vmin and vmax to set a minimum and maximum value. */
 .button:focus {
   outline: none;
 }
+
+/* .button[disabled] {
+  cursor: not-allowed;
+  border: #a1a1a1;
+  background: #ccc;
+  color: #a1a1a1;
+} */
+/* We need JS to remove disabled attribute */
 
 .open {
   display: block !important;
