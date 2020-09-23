@@ -37,7 +37,7 @@ settings if either of the options is true. */
   #product-overview {
     height: 40vh;
     background-position: left 30% bottom 77%;
-    margin-top: 3.8rem;
+    margin-top: 3.5rem;
   }
 
   #product-overview h1 {
@@ -48,6 +48,11 @@ settings if either of the options is true. */
 .section-title {
   color: #2ddf5c;
   text-align: center;
+}
+
+#plans {
+  display: flex;
+  flex-direction: column;
 }
 
 .plan {
@@ -102,24 +107,31 @@ settings if either of the options is true. */
 @media (min-width: 40rem) {
   .plan__list {
     width: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .plan {
-    display: inline-block;
     width: 30%;
-    vertical-align: middle;
-    min-width: 11.81rem;
+    min-width: 13rem;
     max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 28rem;
   }
 
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-    min-width: 13.74rem;
+    height: 30rem;
+    z-index: 50;
   }
 }
 
 #key-features {
+  display: flex;
+  flex-direction: column;
   background: #ff1b68;
   margin-top: 5.5rem;
   padding: 1rem;
@@ -156,16 +168,15 @@ settings if either of the options is true. */
 
 @media (min-width: 40rem) {
   .key-feature {
-    display: inline-block;
     width: 30%;
     max-width: 25rem;
-    vertical-align: top;
+  }
+
+  .key-feature__list {
+    display: flex;
+    justify-content: center;
   }
 }
-
-/* h1 {
-    font-family: sans-serif;
-} */
 
 .modal {
   position: fixed;
