@@ -180,7 +180,10 @@ settings if either of the options is true. */
 
 .modal {
   position: fixed;
-  display: none;
+  opacity: 0;
+  transform: translateY(-3rem);
+  transition: opacity 500ms ease-in, transform 500ms;
+  /* Decide what to watch for what value and how that duration should be used. after that we can set delay in seconds for the transition to wait for a certain time to start. */
   z-index: 200;
   top: 20%;
   left: 30%;

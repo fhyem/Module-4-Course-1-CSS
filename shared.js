@@ -6,6 +6,7 @@ var modalNoButton = document.querySelector(".modal__action--negative");
 var selectPlanButtons = document.querySelectorAll(".plan button");
 var toggleButton = document.querySelector(".toggle-button");
 var mobileNav = document.querySelector(".mobile-nav");
+var ctaButton = document.querySelector(".main-nav__item--cta");
 // select the first element with that class name.
 
 // querySelectorAll() will select all elements with class backdrop.
@@ -54,3 +55,15 @@ toggleButton.addEventListener("click", function () {
 // modal['background-image'];
 // modal.backgroundImage; // by default use camel notation
 // Its only need when directly accessing a style or property from JS.
+
+ctaButton.addEventListener("animationstart", function (event) {
+  console.log("Animation Started", event);
+});
+
+ctaButton.addEventListener("animationend", function (event) {
+  console.log("Animation ended", event);
+});
+
+ctaButton.addEventListener("animationiteration", function (event) {
+  console.log("Animation Iteration", event);
+});
