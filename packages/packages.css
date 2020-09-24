@@ -31,7 +31,7 @@ main {
   border-left: none;
   margin: 1rem 0;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .package:hover,
@@ -51,15 +51,15 @@ main {
   position: absolute;
   top: 0px;
   right: 0px;
-  margin: 1.2rem;
+  /* margin: 1.2rem; */
   font-size: 0.8rem;
   color: white;
   background: #ff5454;
   padding: 0.5rem;
-  /* transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem); */
-  /* width: 12rem; */
-  /* text-align: center; */
-  /* transform-origin: center; */
+  transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+  width: 12rem;
+  text-align: center;
+  transform-origin: center;
 }
 
 .package__subtitle {
