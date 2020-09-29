@@ -2,6 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Anton");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
+/* Sass is a superset to Css. A language based on CSS which is not understood by browser.
+Whats SASS/SCSS are insentially same. 
+SASS stands for Syntactically Awesome Style Sheets 
+Does not run in browsers
+It Extends CSS during Development 
+SASS gives css alot of new rules to be used in development like
+Inheritence, Nested Properties, Variables, Maps, Built-in-Functions
+Adding Simple Arithmetics, Improved Media Queries, Adding Mixins and 
+Using the Ampersand Operator. */
+
 :root {
   --dark-green: #0e4f1f;
   --highlight-color: #ff1b68;
